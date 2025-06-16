@@ -8,7 +8,7 @@ const appUrl = `http://localhost:${port}`;
 
 app.use(express.json());
 app.use(express.static("public"));
-app.use("/posts", moviesRouter);
+app.use("/movies", moviesRouter);
 
 app.listen(port, (err) => {
   if (err) {
